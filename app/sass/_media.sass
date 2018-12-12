@@ -1,0 +1,461 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1440px
++media-breakpoint-down(xl)
+
+//Large: ≥1200px  max-width: 1439px
++media-breakpoint-down(lg)
+	.grid
+		max-width: 1140px
+	.slide1-ttl
+		font-size: 40px
+	.slide2-ttl
+		font-size: 38px
+	.slide3-ttl
+		font-size: 32px
+	.slide4-ttl
+		font-size: 38px
+	.slide5-ttl
+		font-size: 32px
+	.model-info__txt
+		font-size: 16px
+	.model-photo__name
+		padding: 60px 0 60px 60px
+	.test-video
+		width: 664px
+		height: 373px
+	.official
+		&-ttl
+			min-height: inherit
+			padding: 48px 62px
+			&__txt
+				font-size: 27px
+		&-img
+			&_i3
+				width: calc(100% - 10px)
+		&-block
+			min-height: 237px
+			padding: 30px
+		&-item
+			&-half
+				padding: 20px 10px
+				&__ttl
+					font-size: 17px
+	.gift
+		&-ttl
+			font-size: 20px
+		&-form
+			padding: 80px 60px
+	.pr10	
+		padding-right: 10px
+
+//Medium: ≥992px max-width: 1199px
++media-breakpoint-down(md)
+	.nav
+		&-list__item
+			margin: 0 15px
+		&-tel
+			padding: 8px 10px
+	.flex
+		padding: 0 20px
+	.slide1
+		&-ttl
+			&:before
+				width: 100%
+		&-txt
+			margin-left: 160px
+		&-img
+			margin-left: 170px
+	.test-video
+		width: 559px
+		height: 314px
+	.official
+		&-ttl
+			padding: 48px 32px
+		&-img
+			&_i6
+				margin-top: 20px
+	.condition
+		&-block
+			&__img
+				max-width: 240px
+
+//Small: ≥768px max-width: 991px
++media-breakpoint-down(sm)
+	.nav
+		&:after
+			display: none
+	.head
+		margin-top: 79px
+	.mob-btn
+		float: right
+		margin: 7px 0 7px 20px
+	.nav-list
+		float: none
+		padding: 0 20px
+		max-height: 0
+		transition: all ease .3s
+		overflow: hidden
+		&.show
+			max-height: 264px
+		&:after
+			display: none
+		&__item
+			display: block
+			margin: 0
+			padding: 10px 0
+	.head
+		&-slider
+			&__slide
+				&.first
+					background-image: url(../img/head_bg1-sm.jpg) !important
+				&:before
+					width: 900px
+					height: 570px
+				&:after
+					display: none
+			&__numb
+				font-size: 140px
+	.slide
+		&2, &3, &4, &5
+			&-ttl
+				&:before
+					width: 100%
+			&-block
+				margin-bottom: 0
+		&1
+			&-ttl
+				margin-top: 40px
+			&-txt
+				float: right
+				margin-left: 0
+			&-img
+				float: right
+		&5
+			&-ttl
+				margin-top: 40px
+				font-size: 30px
+			&-list
+				margin-left: 100px
+			&-txt
+				margin-left: 215px
+			&-btn
+				margin-left: 100px
+		&4, &3, &2
+			&-ttl
+				font-size: 30px
+	.test
+		&-video
+			width: 360px
+			height: 202px
+		&-info
+			padding: 0
+			margin-top: 40px
+			&__line
+				display: none
+		&-img
+			margin-top: 0
+		&-form
+			.rline
+				&:last-child
+					margin-bottom: 20px
+			&__btn
+				margin-top: 0
+	.official
+		&-ttl
+			padding: 0
+			width: auto
+			background-color: transparent
+			margin: 0 auto
+			&__txt
+				color: #fff
+				margin-bottom: 40px
+		&-block
+			min-height: 261px
+	.gift
+		&-block
+			margin: 0 auto
+			&__note
+				top: 190px
+				left: 295px
+		&-form
+			&:before
+				width: 100%
+	.credit
+		&-img
+			display: none
+		&-block
+			&__item
+				&_big
+					min-width: 270px
+	.condition
+		&-block
+			&__img
+				max-width: 180px
+	.foot-map
+		min-height: 300px
+	.modal
+		position: relative
+		width: auto
+		height: auto
+		padding: 40px
+		&:before
+			content: ''
+			width: 100%
+			height: 100%
+			background-color: rgba(#000, .4)
+			position: absolute
+			top: 0
+			left: 0
+		&_cond
+			.flex-modal__content
+				margin-right: 0
+		&_consalt
+			.flex-modal__content
+				margin-left: 0
+	.fixed-bg
+		background-attachment: scroll
+		background-position: center center
+
+//Extra small: ≥576px max-width: 767px
++media-breakpoint-down(xs)
+	.row
+		margin-left: 10px
+		margin-right: 10px
+	.slide5-btn
+		margin-bottom: 40px
+	.test
+		&-video
+			display: block
+			margin: 0 auto
+	.gift
+		&-block
+			&__note
+				top: 220px
+				left: 260px
+		&-form
+			.rline
+				&:last-child
+					margin-bottom: 20px
+			&__btn
+				margin-top: 0
+	.credit
+		&-block
+			&__item
+				&_big
+					width: 100%
+				&_mini
+					width: 33.333%
+		&-form
+			padding: 90px 40px 40px 160px
+			.rline
+				padding: 0 5px
+	.condition
+		&-btn
+			margin-bottom: 0
+	.foot
+		&-ttl
+			margin-bottom: 40px
+		&-addr
+			margin-bottom: 40px
+	.flex-modal
+		padding: 0
+
+//Extra small: >0 max-width: 575px
++media-breakpoint-down(xxs)
+	.head
+		height: auto
+		min-height: inherit
+		max-height: inherit
+		&-slider
+			&__slide
+				height: auto
+				min-height: inherit
+				max-height: inherit
+		&-slider
+			&__slide
+				&:before
+					display: none
+			&__numb
+				display: none
+	.flex
+		height: auto
+		padding: 0
+	.slide
+		&2, &3, &4, &5
+			&-ttl
+				font-size: 24px
+				margin-top: 20px
+			&-txt
+				display: block
+				float: none
+				margin-left: 0
+				font-size: 18px
+				text-align: center
+				margin-bottom: 20px
+			&-btn
+				margin: 0 auto 100px
+			&-block
+				display: block
+				float: none
+		&1
+			&-ttl
+				font-size: 24px
+				text-transform: uppercase
+			&-txt
+				display: block
+				float: none
+				text-align: center
+				max-width: inherit
+			&-img
+				float: none
+				margin: 20px auto 100px
+		&5
+			.container
+				&:after
+					content: ''
+					width: 100%
+					height: 100%
+					background-color: rgba(#000, .4)
+					position: absolute
+					top: 0
+					left: 0
+			&-ttl
+				position: relative
+				z-index: 1
+				color: #fff
+				&:before
+					background-color: #c4c4c4
+			&-list
+				position: relative
+				margin-left: 30px
+				color: #fff
+				z-index: 1
+			&-txt
+				position: relative
+				text-align: left
+				margin-left: 30px
+				color: #fff
+				z-index: 1
+			&-btn
+				position: relative
+				z-index: 1
+				margin: 0 auto 100px
+		&2
+			.container
+				&:after
+					content: ''
+					width: 100%
+					height: 100%
+					background-color: rgba(#000, .4)
+					position: absolute
+					top: 0
+					left: 0
+			&-txt, &-ttl, &-btn
+				position: relative
+				z-index: 1
+		&3
+			.container
+				&:after
+					content: ''
+					width: 100%
+					height: 100%
+					background-color: rgba(#000, .4)
+					position: absolute
+					top: 0
+					left: 0
+			&-txt
+				color: #fff
+				position: relative
+				z-index: 1
+			&-ttl
+				color: #fff
+				position: relative
+				z-index: 1
+				&:before
+					background-color: #c4c4c4
+			&-btn
+				position: relative
+				z-index: 1
+
+	.models-ttl
+		padding-left: 0
+		&:before, &:after
+			display: none
+	.model-photo
+		height: auto
+		&__link
+			position: static
+		&__btn
+			position: static
+		&__slide
+			min-height: 300px
+			&.first:before
+				display: none
+	.fixed-bg
+		min-height: 200px
+	.test
+		&-video
+			width: 300px
+			height: 168px
+	.official
+		&-item
+			padding: 0
+			&-half
+				width: 100%
+				padding: 0
+				border: none
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+			&__btn
+				padding: 9px 10px
+		&-img_i4
+			margin: 20px auto
+	.gift
+		&-block__note
+			left: 5px
+			bottom: 5px
+			top: inherit
+		&-form
+			padding: 80px 20px
+	.credit
+		&-ttl
+			padding-left: 0
+			&:before, &:after
+				display: none
+		&-block__item_mini
+			width: 100%
+		&-form
+			padding: 10px 10px 40px
+			margin-top: 0
+			&:before
+				display: none
+			.rline
+				width: 100%
+				float: none
+	.condition-list__item
+		width: 100%
+		float: none
+	.foot
+		&-soc
+			margin-top: 40px
+		&-block__logo
+			display: block
+			margin: 0 auto 40px
+	.dev
+		float: none
+		margin: 0 auto
+		span
+			font-size: 10px
+	.modal
+		&__ttl
+			text-transform: none
+			line-height: 1.5
+		.rline
+			width: 100%
+			float: none
