@@ -6,7 +6,7 @@
 	if(isset ($_POST['car'])) {$car=$_POST['car'];}
 	if(isset ($_POST['dop'])) {$dop=$_POST['dop'];}
 
-	$to = "diler.skoda@gmail.com"; // Замениь на емаил клиента
+	$to = "diler.skoda@gmail.com, ag.samarin@gmail.com"; // Замениь на емаил клиента
 
 	$utm_source=$_COOKIE['utm_source'];
     $utm_medium=$_COOKIE['utm_medium'];
@@ -22,7 +22,9 @@
         $full_data = "Source: $utm_source/$utm_medium\nKW: $utm_term";
     }
 
-	$message = "Форма: $title <br><br>";
+   	$subject = "[diler-skoda.com.ua]: $title";
+
+	$message = "";
 	if ( $name || $phonenum || $date || $car || $dop || $full_data ) {
 		$message .= ""
 			. ( $name ?" Имя:  $name <br>" : "")
@@ -35,10 +37,10 @@
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers .= "From: no-reply@diler-skoda.com.ua"; // Заменить домен на домен клиента
+	$headers .= 'From: "Заявки с сайта" <no-reply@diler-skoda.com.ua>'; // Заменить домен на домен клиента
 
 	if (!$title && !$phonenum) {
 	} else {
-		mail($to,"New lead(diler-skoda.com.ua)",$message,$headers); // Заменить домен на домен клиента
+		mail($to,$subject,$message,$headers); // Заменить домен на домен клиента
 	}
 ?>
