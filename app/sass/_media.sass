@@ -14,7 +14,7 @@
 	.slide1-ttl
 		font-size: 40px
 	.slide2-ttl
-		font-size: 38px
+		font-size: 36px
 	.slide3-ttl
 		font-size: 32px
 	.slide4-ttl
@@ -57,9 +57,7 @@
 +media-breakpoint-down(md)
 	.nav
 		&-list__item
-			margin: 0 15px
-		&-tel
-			padding: 8px 10px
+			margin: 0 12px
 	.flex
 		padding: 0 20px
 	.slide1
@@ -101,13 +99,17 @@
 		transition: all ease .3s
 		overflow: hidden
 		&.show
-			max-height: 264px
+			max-height: 291px
 		&:after
 			display: none
 		&__item
 			display: block
 			margin: 0
 			padding: 10px 0
+	.nav-tel
+		margin-top: 0
+	.lang
+		float: none
 	.head
 		&-slider
 			&__slide
@@ -264,6 +266,13 @@
 			margin-bottom: 40px
 	.flex-modal
 		padding: 0
+	.slide2
+		&-block
+			margin-left: 0
+		&-img
+			margin: 0 auto 30px
+	.flex__content
+		margin-top: 50px
 
 //Extra small: >0 max-width: 575px
 +media-breakpoint-down(xxs)
@@ -297,6 +306,9 @@
 				font-size: 18px
 				text-align: center
 				margin-bottom: 20px
+			&-list
+				li
+					font-size: 18px
 			&-btn
 				margin: 0 auto 100px
 			&-block
@@ -358,6 +370,11 @@
 			&-txt, &-ttl, &-btn
 				position: relative
 				z-index: 1
+			&-link
+				position: relative
+				z-index: 1
+				margin-bottom: 30px
+				text-align: center
 		&3
 			.container
 				&:after

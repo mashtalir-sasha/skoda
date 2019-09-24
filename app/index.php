@@ -58,7 +58,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="col-md-2 col-6">
 					<a href="#top"><img src="img/logo.png" alt="ŠKODA" class="nav-logo"></a>
 				</div>
-				<div class="col-md-8 d-none d-md-block">
+				<div class="col-md-7 d-none d-md-block">
 					<ul class="nav-list">
 						<li class="nav-list__item"><a href="#models" class="anchor">Модельный ряд</a></li>
 						<li class="nav-list__item"><a href="#about" class="anchor">О нас</a></li>
@@ -68,7 +68,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<li class="nav-list__item"><a href="#contacts" class="anchor">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-md-2 col-6">
+				<div class="col-md-3 col-6">
+					<div class="lang d-none d-mb-block">
+						<a href="#" class="lang-link active">RU</a>
+						<a href="/uk" class="lang-link">UK</a>
+					</div>
 					<div class="mob-btn d-block d-md-none"><img src="img/menu-button.svg" width="24" height="24" alt="ŠKODA"></div>
 					<a href="tel:+380502665111" class="nav-tel d-none d-sm-block">+38(050) 26-65-111</a>
 				</div>
@@ -82,13 +86,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<li class="nav-list__item"><a href="#gift" class="anchor">Акции</a></li>
 				<li class="nav-list__item"><a href="#credit" class="anchor">Кредит</a></li>
 				<li class="nav-list__item"><a href="#contacts" class="anchor">Контакты</a></li>
+				<div class="lang">
+					<a href="#" class="lang-link active">RU</a>
+					<a href="/uk" class="lang-link">UK</a>
+				</div>
 			</ul>
 		</div>
 	</nav>
 
 	<header class="head">
 		<div class="head-slider">
-			<div class="head-slider__slide" style="background-image:url(img/head_bg4.jpg)">
+			<!-- <div class="head-slider__slide" style="background-image:url(img/head_bg4.jpg)">
 				<div class="head-slider__numb">01</div>
 				<div class="container">
 					<div class="row">
@@ -122,7 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="head-slider__slide slide2" style="background-image:url(img/head_bg2.jpg)">
 				<div class="head-slider__numb">03</div>
 				<div class="container">
@@ -142,7 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 			</div>
-			<div class="head-slider__slide slide3" style="background-image:url(img/head_bg3.jpg)">
+			<!-- <div class="head-slider__slide slide3" style="background-image:url(img/head_bg3.jpg)">
 				<div class="head-slider__numb">04</div>
 				<div class="container">
 					<div class="row">
@@ -186,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</header>
 
